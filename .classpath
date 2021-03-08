@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/hekanibru/Documents/DPhil/Prototype/workspace/REQUIEM/External JARs/antlr-3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/hekanibru/Documents/DPhil/Prototype/workspace/REQUIEM/External JARs/HermiT.jar"/>
+	<classpathentry kind="lib" path="/Users/hekanibru/Documents/DPhil/Prototype/workspace/REQUIEM/External JARs/owlapi-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/hekanibru/Documents/DPhil/Prototype/workspace/REQUIEM/External JARs/mysql-connector-java-5.1.10-bin.jar"/>
+	<classpathentry kind="lib" path="/Users/hekanibru/Documents/DPhil/Prototype/workspace/REQUIEM/External JARs/postgresql-8.4-701.jdbc3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
