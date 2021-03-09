@@ -55,7 +55,6 @@ public class ELHIOParser {
         //Normalize ontology (HermiT)
         OwlNormalization normalization = new OwlNormalization(manager.getOWLDataFactory());
         // normalization.processOntology(new Configuration(), ontology);
-// import static org.semanticweb.HermiT.Reasoner.*;
         normalization.processOntology(new org.semanticweb.HermiT.Reasoner$Configuration(), ontology);
 
         //Clausify ontology

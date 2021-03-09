@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.oxford.comlab.requiem</groupId>
+	<artifactId>artname</artifactId>
+	<version>0.5.0</version>
+	<packaging>jar</packaging>
+	<description>desc</description>
+
+
+	<dependencies>
+
+<!-- need this jar on the classpath during compilation -->
+<dependency>
+	<groupId>org.antlr</groupId>
+	<artifactId>antlr</artifactId>
+	<version>3.1</version>
+	<scope>system</scope>
+    <!-- <systemPath>External\ JARs/antlr-3.1.jar</systemPath> -->
+    <systemPath>${basedir}/External JARs/antlr-3.1.jar</systemPath>
+</dependency>
+<dependency>
+	<groupId>owlapig</groupId>
+	<artifactId>owlapia</artifactId>
+	<version>3.1</version>
+	<scope>system</scope>
+    <!-- <systemPath>External\ JARs/antlr-3.1.jar</systemPath> -->
+    <systemPath>${basedir}/External JARs/owlapi-bin.jar</systemPath>
+</dependency>
+<dependency>
+	<groupId>hermitlastg</groupId>
+	<artifactId>hermitlast</artifactId>
+	<version>3.1</version>
+	<scope>system</scope>
+    <systemPath>${basedir}/External JARs/HermiT (last).jar</systemPath>
+</dependency>
+<dependency>
+	<groupId>hermitg</groupId>
+	<artifactId>hermit</artifactId>
+	<version>3.1</version>
+	<scope>system</scope>
+    <systemPath>${basedir}/External JARs/HermiT.jar</systemPath>
+</dependency>
+<dependency>
+	<groupId>mysqlg</groupId>
+	<artifactId>mysqla</artifactId>
+	<version>3.1</version>
+	<scope>system</scope>
+    <systemPath>${basedir}/External JARs/mysql-connector-java-5.1.10-bin.jar</systemPath>
+</dependency>
+<dependency>
+	<groupId>postgresg</groupId>
+	<artifactId>postgresa</artifactId>
+	<version>3.1</version>
+	<scope>system</scope>
+    <systemPath>${basedir}/External JARs/postgresql-8.4-701.jdbc3.jar</systemPath>
+</dependency>
+
+
+
+	</dependencies>
+
+	<build>
+		<resources>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
