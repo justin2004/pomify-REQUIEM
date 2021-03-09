@@ -43,6 +43,9 @@ Size of the rewriting (symbols):     71
 1: RoadSideJunk(?0)  <-  CarParts(?0), Junk(?0)
 ```
 
+## TODO
+
+now it would be nice to convert between datalog queries and SPARQL...
 
 
 
