@@ -29,13 +29,13 @@
     <!-- <systemPath>External\ JARs/antlr-3.1.jar</systemPath> -->
     <systemPath>${basedir}/External JARs/owlapi-bin.jar</systemPath>
 </dependency>
-<dependency>
-	<groupId>hermitlastg</groupId>
-	<artifactId>hermitlast</artifactId>
-	<version>3.1</version>
-	<scope>system</scope>
-    <systemPath>${basedir}/External JARs/HermiT (last).jar</systemPath>
-</dependency>
+<!-- <dependency> -->
+<!-- 	<groupId>hermitlastg</groupId> -->
+<!-- 	<artifactId>hermitlast</artifactId> -->
+<!-- 	<version>3.1</version> -->
+<!-- 	<scope>system</scope> -->
+<!--     <systemPath>${basedir}/External JARs/HermiT (last).jar</systemPath> -->
+<!-- </dependency> -->
 <dependency>
 	<groupId>hermitg</groupId>
 	<artifactId>hermit</artifactId>

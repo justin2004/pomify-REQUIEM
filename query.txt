@@ -1,0 +1,2 @@
+//Q(?0) <- Location(?0)
+Q(?0) <- RoadSideJunk(?0)

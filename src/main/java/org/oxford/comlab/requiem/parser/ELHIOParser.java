@@ -14,7 +14,8 @@ import org.oxford.comlab.requiem.rewriter.TermFactory;
 
 // import org.semanticweb.HermiT.Reasoner.Configuration;
 // import static org.semanticweb.HermiT.Reasoner.Configuration.*;
-import static org.semanticweb.HermiT.Reasoner.*;
+// import static org.semanticweb.HermiT.Reasoner.*;
+import org.semanticweb.HermiT.Reasoner;
 // import org.semanticweb.HermiT.Reasoner;
 //
 import org.semanticweb.HermiT.owlapi.structural.OwlNormalization;
@@ -55,7 +56,10 @@ public class ELHIOParser {
         //Normalize ontology (HermiT)
         OwlNormalization normalization = new OwlNormalization(manager.getOWLDataFactory());
         // normalization.processOntology(new Configuration(), ontology);
-        normalization.processOntology(new org.semanticweb.HermiT.Reasoner$Configuration(), ontology);
+        // normalization.processOntology(new org.semanticweb.HermiT.Reasoner$Configuration(), ontology);
+        // Reasoner r = new Reasoner("http://localhost:8080/my1.ttl");
+        // Reasoner r = new Reasoner();
+        normalization.processOntology(new org.semanticweb.HermiT.Reasoner.Configuration(), ontology);
 
         //Clausify ontology
         ELHIOClausifier clausification = new ELHIOClausifier(this.m_termFactory, manager);
