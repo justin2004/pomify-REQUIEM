@@ -6,7 +6,7 @@
 docker run --net=host --rm -it -v `pwd`:/mnt -v req_m2:/root/.m2 req mvn clean package
 ```
 
-can any fix this:
+can anyone fix this:
 ```
 [ERROR] /mnt/src/main/java/org/oxford/comlab/requiem/parser/ELHIOParser.java:[58,65] org.semanticweb.HermiT.Reasoner.Configuration is not public in org.semanticweb.HermiT.Reasoner; cannot be accessed from outside package
 ```
