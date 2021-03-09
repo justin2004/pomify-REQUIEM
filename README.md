@@ -22,6 +22,28 @@ docker run --rm -it -v `pwd`:/mnt justin2004/pomify-requiem ./query.txt file:///
 look for `out.txt*` files -- which are the re-written queries (that take the ontology into account) 
 
 
+## example 
+
+the ontology file i added (my1.ttl) has some axioms about Junk, RoadSideJunk, etc.
+in query.txt i ask for all things that are of type RoadSideJunk.
+and in the re-written query i see that the RoadSideJunk is also found by looking for the intersection of CarParts and Junk.
+```
+justin@parens:/tmp/pomify-REQUIEM$ cat query.txt 
+Q(?0) <- RoadSideJunk(?0)
+justin@parens:/tmp/pomify-REQUIEM$ 
+justin@parens:/tmp/pomify-REQUIEM$ cat out.txtRQMN-0.txt 
+==================SUMMARY==================
+Ontology file:             my1.ttl
+Query:                     Q(?0)  <-  RoadSideJunk(?0)
+Running time:              7 milliseconds 
+Size of the rewriting (queries):     2
+Size of the rewriting (symbols):     71
+==================SUMMARY==================
+0: Q(?0)  <-  RoadSideJunk(?0)
+1: RoadSideJunk(?0)  <-  CarParts(?0), Junk(?0)
+```
+
+
 
 
 ## notes
